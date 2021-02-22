@@ -1,0 +1,57 @@
+
+<html>
+
+<head>
+<link href="style.css" rel="stylesheet"/> <!--linking css file-->
+<title>SAS Fashion House</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script> 	<!--JavaScript Function-->
+	$(document).ready(function(){
+		$(".btn").click(function(){
+			$(".input, .area").val("");
+	});
+       });
+function myFunction() {
+  document.getElementById("btnresult").innerHTML = "Thank you for contacting us. Have a good day!";
+};
+</script>
+</head>
+
+<body background="Pictures/bg.jpg"><!--Adding Background image-->
+
+<div class="header"><!--Header -->
+<h1>SAS FASHION HOUSE</h1>
+<nav>				<!--menu-->
+		<ul align="center">
+		   <li><a href="Home.html"> Home</a> </li>
+		   <li><a href="Product.html"> Product</a> </li>
+		   <li><a href="#"> Contact Us</a> </li>
+		</ul>
+</nav>
+</div>
+
+<form class="container" ><!--Creating Form-->
+<p align="center"> Contact Us </p>
+<div class="login">
+	<input type="text" class="input" placeholder="Your Name">
+	<input type="text" class="input" placeholder="Your Email Address"></div>
+<div class="subject">
+	<input type="text" class="input" placeholder="Subject"></div>
+<div class="msg">
+	<textarea  class="area" placeholder="Leave A Message"></textarea></div>
+
+<p align="left" style="font-size:100%;" id="btnresult"></p>
+
+<div class="btn" onclick="myFunction()">Send Message </div>
+
+</form>
+
+
+<div class="footer"><!--Footer of this page-->
+<p align="right"> SAS Fashion House &copy 2018, LUCT.</p>
+</div>
+
+</body>
+</html>
+
